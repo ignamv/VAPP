@@ -1,0 +1,30 @@
+IMMEDIATE:
+* start_VAPP
+* LICENSE
+* Visitor for discovering which extra voltages don't need to be internal_unks
+* Visitor for semantic checks
+* Visitor for determining which IOs in an implicit equation are variables
+* See the negative capacitance example -> set current to zero if not given
+* Detect that the source for a branch is zero and tell ModSpec so.
+* inout statement from the frontend is missing
+* support for multiple function outputs in function calls (not definitions).
+  => hard one.
+
+LONG TERM:
+* Clarify the issue with multiple outs to the visit methods
+
+NOTES:
+Possible bug in MAPP:
+a branch with no voltage and no current contribution is not automatically
+assumed to be a open branch
+
+DOCUMENTATION:
+rules for writing down ddt(...) expressions.
+    fail cases: two ddt's in a single expression
+    use ddt only in contrib statements, i.e., not with variables
+    ddt must have a path to the top, i.e., ddt -> contribution must lie on
+    ddtPath
+    division by ddt -> currently executes but is illegal
+
+APPLICATION:
+translate: R3, bsim4, psp models

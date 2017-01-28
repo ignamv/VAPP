@@ -1,0 +1,22 @@
+function MOD = %s(uniqID)
+
+    MOD = ee_model();
+    MOD = add_to_ee_model (MOD, 'modelname', '%s');
+    MOD = add_to_ee_model (MOD, 'terminals', {%s});
+
+    // variable info:
+    // explicit outputs: %s
+    // internal unknowns: %s
+    MOD = add_to_ee_model (MOD, 'explicit_outs', {%s});
+    MOD = add_to_ee_model (MOD, 'internal_unks', {%s});
+
+    MOD = add_to_ee_model (MOD, 'parms', {%s});
+
+    MOD = add_to_ee_model (MOD, 'fqei_all', @fqei_all);
+
+    MOD = finish_ee_model(MOD);
+
+end
+
+function [fe, qe, fi, qi] = fqei_all(S)
+    v2struct(S);

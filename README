@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This file is part of VAPP, the Berkeley Verilog-A Parser and Preprocessor.  %
+%% Author: A. Gokcen Mahmutoglu                                                %
+%% Date: 01/25/2015                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ABOUT VAPP and MAPP:
+
+    VAPP is the Berkeley Verilog-A Parser and Preprocessor. VAPP is distributed
+    as part of MAPP, the Berkeley Model and Algorithm Prototyping Platform. For
+    more information about MAPP, type "help MAPP" in a MATLAB prompt.
+
+    VAPP enables its users to import Verilog-A models into MAPP. To this end,
+    Verilog-A files are translated into the ModSpec format which is the native
+    model specification format of MAPP. ModSpec is a general model
+    specification format, i.e., not just for electrical devices, and supports a
+    wider variety of tools for defining device models than Verilog-A does.
+    Since MAPP's emphasis is on electrical devices and circuits, ModSpec offers
+    convenient ways of dealing with voltages and currents. However, this
+    feature is designed with good modeling practices in mind. In order to
+    encourage model developers to observe these principles, MAPP's interface
+    for electrical quantities only supports a subset of the Verilog-A language.
+    For more information about ModSpec, type "help ModSpec" in a MATLAB prompt.
+
+USAGE:
+
+    (In the following block of text, the characters ">>" indicate a MATLAB
+    prompt.)
+
+    To start using VAPP, first setup paths by running
+
+        >> start_MAPP
+
+    from the top-level VAPP directory and type
+
+        >> help va2modspec
+
+    to obtain information about VAPP's simple user interface.

@@ -1,0 +1,5 @@
+* ddt(everything inside here)
+* I(p,n) <+ I(p,n) + ...
+        implicit equations don't stretch it. put the dummy IO as the first on
+        the RHS
+* use two nodes. -> no global ground.
